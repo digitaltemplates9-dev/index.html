@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Premium Digital Products Store | Professional Templates & Resources</title>
+    <title>Premium Digital Products Store | Professional Templates</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <style>
@@ -16,16 +16,16 @@
         
         body {
             font-family: 'Roboto', sans-serif;
-            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
-            color: #1e293b;
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            color: #f1f5f9;
             line-height: 1.6;
-            padding: 20px;
             min-height: 100vh;
         }
         
         .container {
             max-width: 1400px;
             margin: 0 auto;
+            padding: 20px;
         }
         
         /* Header */
@@ -33,10 +33,10 @@
             text-align: center;
             margin-bottom: 50px;
             padding: 50px 40px;
-            background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+            background: linear-gradient(135deg, #7c3aed 0%, #4f46e5 100%);
             color: white;
             border-radius: 25px;
-            box-shadow: 0 25px 50px rgba(30, 58, 138, 0.25);
+            box-shadow: 0 25px 50px rgba(124, 58, 237, 0.25);
             position: relative;
             overflow: hidden;
         }
@@ -68,36 +68,44 @@
             margin-right: auto;
         }
         
+        /* Business Description */
         .business-description {
-            max-width: 900px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 30px;
+            border-radius: 20px;
             margin: 30px auto;
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-            text-align: left;
+            max-width: 900px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
         }
         
-        .language-switch {
+        .description-switch {
             display: flex;
             justify-content: center;
-            gap: 15px;
-            margin: 20px 0;
+            gap: 20px;
+            margin-bottom: 20px;
         }
         
         .lang-btn {
-            background: rgba(255, 255, 255, 0.2);
+            background: rgba(255, 255, 255, 0.1);
+            border: none;
             color: white;
-            border: 2px solid white;
-            padding: 8px 20px;
-            border-radius: 25px;
+            padding: 10px 25px;
+            border-radius: 50px;
             cursor: pointer;
+            font-family: 'Poppins', sans-serif;
             font-weight: 600;
             transition: all 0.3s ease;
         }
         
         .lang-btn.active {
-            background: white;
-            color: #1e3a8a;
+            background: #3b82f6;
+        }
+        
+        .description-content {
+            text-align: center;
+            font-size: 1.1rem;
+            line-height: 1.8;
         }
         
         /* Store Info */
@@ -125,47 +133,6 @@
             font-size: 1.2rem;
         }
         
-        /* Share Link */
-        .share-link-container {
-            background: white;
-            padding: 25px;
-            border-radius: 15px;
-            margin: 30px 0;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-        }
-        
-        .share-link {
-            display: flex;
-            gap: 10px;
-            margin-top: 15px;
-        }
-        
-        .share-link input {
-            flex: 1;
-            padding: 12px 20px;
-            border: 2px solid #e2e8f0;
-            border-radius: 10px;
-            font-size: 1rem;
-        }
-        
-        .copy-btn {
-            background: #3b82f6;
-            color: white;
-            border: none;
-            padding: 12px 25px;
-            border-radius: 10px;
-            cursor: pointer;
-            font-weight: 600;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            transition: all 0.3s ease;
-        }
-        
-        .copy-btn:hover {
-            background: #2563eb;
-        }
-        
         /* Packages Section */
         .packages-section {
             margin-bottom: 60px;
@@ -174,7 +141,7 @@
         .section-title {
             font-family: 'Poppins', sans-serif;
             font-size: 2.5rem;
-            color: #1e3a8a;
+            color: #60a5fa;
             text-align: center;
             margin-bottom: 40px;
             position: relative;
@@ -209,19 +176,21 @@
         
         /* Package Card */
         .package-card {
-            background: white;
+            background: #1e293b;
             border-radius: 20px;
             overflow: hidden;
-            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
             transition: all 0.4s ease;
             display: flex;
             flex-direction: column;
             height: 100%;
+            border: 1px solid #334155;
         }
         
         .package-card:hover {
             transform: translateY(-15px);
-            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4);
+            border-color: #3b82f6;
         }
         
         .package-header {
@@ -288,7 +257,7 @@
             margin-bottom: 18px;
             padding-left: 35px;
             position: relative;
-            color: #475569;
+            color: #cbd5e1;
         }
         
         .features-list li::before {
@@ -302,13 +271,13 @@
         
         .feature-title {
             font-weight: 600;
-            color: #1e293b;
+            color: #f1f5f9;
             margin-bottom: 3px;
         }
         
         .feature-description {
             font-size: 0.95rem;
-            color: #64748b;
+            color: #94a3b8;
         }
         
         /* Package Footer */
@@ -331,7 +300,7 @@
             justify-content: center;
             gap: 15px;
             transition: all 0.3s ease;
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
         }
         
         .basic-package .select-btn {
@@ -351,16 +320,94 @@
         
         .select-btn:hover {
             transform: translateY(-5px);
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+        }
+        
+        /* Template Previews Section */
+        .template-previews-section {
+            margin-bottom: 60px;
+        }
+        
+        .template-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 25px;
+        }
+        
+        .template-card {
+            background: #1e293b;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+            border: 1px solid #334155;
+        }
+        
+        .template-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            border-color: #3b82f6;
+        }
+        
+        .template-image {
+            height: 180px;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+        
+        .template-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.7);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .template-card:hover .template-overlay {
+            opacity: 1;
+        }
+        
+        .view-template-btn {
+            background: #3b82f6;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 50px;
+            cursor: pointer;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+        }
+        
+        .template-content {
+            padding: 25px;
+        }
+        
+        .template-content h4 {
+            font-family: 'Poppins', sans-serif;
+            color: #60a5fa;
+            margin-bottom: 10px;
+        }
+        
+        .template-content p {
+            color: #cbd5e1;
+            font-size: 0.9rem;
         }
         
         /* Payment Section */
         .payment-section {
-            background: white;
+            background: #1e293b;
             border-radius: 25px;
             padding: 50px;
-            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
             margin-bottom: 60px;
+            border: 1px solid #334155;
         }
         
         .payment-content {
@@ -383,12 +430,12 @@
         .payment-info h3 {
             font-family: 'Poppins', sans-serif;
             font-size: 2rem;
-            color: #1e3a8a;
+            color: #60a5fa;
             margin-bottom: 20px;
         }
         
         .payment-steps {
-            background: #f8fafc;
+            background: #0f172a;
             padding: 25px;
             border-radius: 15px;
             border-left: 5px solid #3b82f6;
@@ -420,61 +467,49 @@
         
         .step-content h4 {
             font-family: 'Poppins', sans-serif;
-            color: #1e293b;
+            color: #f1f5f9;
             margin-bottom: 5px;
         }
         
-        /* Template Preview Gallery */
-        .preview-gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 25px;
-            margin: 40px 0;
+        .step-content p {
+            color: #cbd5e1;
         }
         
-        .template-item {
-            background: white;
+        .mpesa-number {
+            background: linear-gradient(135deg, #10b981, #059669);
+            color: white;
+            padding: 30px;
             border-radius: 15px;
-            overflow: hidden;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-            transition: all 0.3s ease;
+            text-align: center;
+            min-width: 350px;
             cursor: pointer;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
         }
         
-        .template-item:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        .mpesa-number:hover {
+            transform: scale(1.03);
+            box-shadow: 0 15px 30px rgba(16, 185, 129, 0.3);
+            border-color: white;
         }
         
-        .template-image {
-            height: 200px;
-            background: linear-gradient(135deg, #e2e8f0, #cbd5e1);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 4rem;
-            color: #64748b;
-        }
-        
-        .template-info {
-            padding: 25px;
-        }
-        
-        .template-info h4 {
+        .mpesa-number h4 {
             font-family: 'Poppins', sans-serif;
-            color: #1e3a8a;
+            font-size: 1.5rem;
             margin-bottom: 10px;
         }
         
-        .template-type {
-            display: inline-block;
-            background: #e0f2fe;
-            color: #0369a1;
-            padding: 5px 12px;
-            border-radius: 20px;
-            font-size: 0.85rem;
-            font-weight: 600;
+        .mpesa-number .number {
+            font-size: 2.5rem;
+            font-weight: 800;
+            letter-spacing: 2px;
             margin-bottom: 15px;
+            user-select: all;
+        }
+        
+        .mpesa-number .note {
+            font-size: 1rem;
+            opacity: 0.9;
         }
         
         /* Testimonials */
@@ -486,15 +521,16 @@
         }
         
         .testimonial {
-            background: white;
+            background: #1e293b;
             padding: 25px;
             border-radius: 15px;
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            border: 1px solid #334155;
         }
         
         .testimonial-content {
             font-style: italic;
-            color: #475569;
+            color: #cbd5e1;
             margin-bottom: 20px;
         }
         
@@ -518,10 +554,78 @@
         
         .author-info h5 {
             font-family: 'Poppins', sans-serif;
-            color: #1e293b;
+            color: #f1f5f9;
         }
         
-        /* Modal Styles */
+        /* FAQ */
+        .faq-section {
+            margin-top: 60px;
+        }
+        
+        .faq-item {
+            background: #1e293b;
+            border-radius: 15px;
+            margin-bottom: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            border: 1px solid #334155;
+        }
+        
+        .faq-question {
+            padding: 25px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            color: #60a5fa;
+        }
+        
+        .faq-answer {
+            padding: 0 25px;
+            max-height: 0;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+        
+        .faq-item.active .faq-answer {
+            padding: 0 25px 25px;
+            max-height: 500px;
+        }
+        
+        .faq-question i {
+            transition: transform 0.3s ease;
+        }
+        
+        .faq-item.active .faq-question i {
+            transform: rotate(180deg);
+        }
+        
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 40px;
+            color: #94a3b8;
+            font-size: 0.95rem;
+            border-top: 1px solid #334155;
+            margin-top: 60px;
+        }
+        
+        .permanent-link {
+            background: linear-gradient(135deg, #7c3aed, #4f46e5);
+            color: white;
+            padding: 15px 30px;
+            border-radius: 50px;
+            display: inline-block;
+            margin: 20px 0;
+            text-decoration: none;
+            font-weight: 600;
+            font-family: 'Poppins', sans-serif;
+            box-shadow: 0 10px 20px rgba(124, 58, 237, 0.3);
+        }
+        
+        /* Modal */
         .modal {
             display: none;
             position: fixed;
@@ -529,7 +633,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(0, 0, 0, 0.8);
+            background: rgba(0, 0, 0, 0.9);
             z-index: 1000;
             align-items: center;
             justify-content: center;
@@ -541,11 +645,14 @@
         }
         
         .modal-content {
-            background: white;
+            background: #1e293b;
             border-radius: 25px;
             width: 100%;
-            max-width: 500px;
+            max-width: 900px;
+            max-height: 90vh;
+            overflow-y: auto;
             animation: modalSlideIn 0.3s ease;
+            border: 1px solid #334155;
         }
         
         @keyframes modalSlideIn {
@@ -560,8 +667,8 @@
         }
         
         .modal-header {
-            padding: 25px 30px;
-            background: linear-gradient(135deg, #1e3a8a, #2563eb);
+            padding: 30px;
+            background: linear-gradient(135deg, #7c3aed, #4f46e5);
             color: white;
             display: flex;
             justify-content: space-between;
@@ -570,59 +677,42 @@
         
         .modal-header h3 {
             font-family: 'Poppins', sans-serif;
-            font-size: 1.5rem;
+            font-size: 1.8rem;
         }
         
         .close-modal {
             background: rgba(255, 255, 255, 0.2);
             color: white;
             border: none;
-            width: 36px;
-            height: 36px;
+            width: 40px;
+            height: 40px;
             border-radius: 50%;
             cursor: pointer;
-            font-size: 1rem;
+            font-size: 1.2rem;
             display: flex;
             align-items: center;
             justify-content: center;
         }
         
         .modal-body {
-            padding: 30px;
+            padding: 40px;
         }
         
-        .form-group {
-            margin-bottom: 20px;
+        .selected-package {
+            background: #0f172a;
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            border-left: 5px solid #3b82f6;
         }
         
-        .form-group label {
-            display: block;
-            margin-bottom: 8px;
-            font-weight: 600;
-            color: #1e293b;
-        }
-        
-        .form-group input {
-            width: 100%;
-            padding: 12px 15px;
-            border: 2px solid #e2e8f0;
-            border-radius: 10px;
-            font-size: 1rem;
-            transition: border-color 0.3s ease;
-        }
-        
-        .form-group input:focus {
-            outline: none;
-            border-color: #3b82f6;
-        }
-        
-        .confirm-btn {
-            width: 100%;
-            padding: 15px;
-            background: linear-gradient(135deg, #10b981, #059669);
+        /* WhatsApp Button */
+        .whatsapp-btn {
+            background: linear-gradient(135deg, #25D366, #128C7E);
             color: white;
             border: none;
-            border-radius: 10px;
+            padding: 18px 30px;
+            border-radius: 12px;
             font-family: 'Poppins', sans-serif;
             font-weight: 600;
             font-size: 1.1rem;
@@ -630,299 +720,123 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 10px;
+            gap: 12px;
+            width: 100%;
+            margin-top: 25px;
             transition: all 0.3s ease;
+            text-decoration: none;
+            box-shadow: 0 10px 20px rgba(37, 211, 102, 0.2);
         }
         
-        .confirm-btn:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 10px 25px rgba(16, 185, 129, 0.3);
+        .whatsapp-btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(37, 211, 102, 0.3);
         }
         
-        .amount-display {
-            text-align: center;
-            padding: 20px;
-            background: #f0f9ff;
-            border-radius: 15px;
-            margin-bottom: 30px;
-        }
-        
-        .amount-display .amount {
-            font-size: 3.5rem;
-            font-weight: 800;
-            color: #10b981;
-            margin: 10px 0;
-        }
-        
+        /* Success Message */
         .success-message {
-            background: #d1fae5;
-            color: #065f46;
+            background: #065f46;
+            color: #a7f3d0;
             padding: 20px;
             border-radius: 12px;
-            margin-top: 20px;
-            text-align: center;
+            margin-top: 25px;
             display: none;
+            border-left: 5px solid #10b981;
         }
         
         .success-message.show {
             display: block;
         }
         
-        .access-links {
-            margin-top: 30px;
-            padding-top: 20px;
-            border-top: 2px solid #e2e8f0;
-        }
-        
-        .access-links h4 {
-            font-family: 'Poppins', sans-serif;
-            color: #1e3a8a;
-            margin-bottom: 15px;
-        }
-        
-        .access-link {
-            display: block;
-            padding: 15px;
-            background: #3b82f6;
-            color: white;
-            text-decoration: none;
+        /* Template Preview Modal */
+        .template-modal-img {
+            width: 100%;
             border-radius: 10px;
-            margin-bottom: 10px;
-            text-align: center;
-            font-weight: 600;
-            transition: all 0.3s ease;
-        }
-        
-        .access-link:hover {
-            background: #2563eb;
-            transform: translateY(-3px);
-        }
-        
-        .access-link.disabled {
-            background: #94a3b8;
-            cursor: not-allowed;
-        }
-        
-        /* WhatsApp Button */
-        .whatsapp-float {
-            position: fixed;
-            bottom: 30px;
-            right: 30px;
-            background: #25D366;
-            color: white;
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 2rem;
-            box-shadow: 0 10px 25px rgba(37, 211, 102, 0.3);
-            z-index: 100;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            text-decoration: none;
-        }
-        
-        .whatsapp-float:hover {
-            transform: scale(1.1);
-            box-shadow: 0 15px 35px rgba(37, 211, 102, 0.4);
-        }
-        
-        /* Footer */
-        footer {
-            text-align: center;
-            padding: 40px;
-            color: #64748b;
-            font-size: 0.95rem;
-            border-top: 1px solid #e2e8f0;
-            margin-top: 60px;
-        }
-        
-        .advantages-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            margin: 40px 0;
-        }
-        
-        .advantage-card {
-            background: white;
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-            transition: all 0.3s ease;
-        }
-        
-        .advantage-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
-        }
-        
-        .advantage-icon {
-            font-size: 2.5rem;
-            color: #3b82f6;
             margin-bottom: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
         }
         
-        .advantage-card h4 {
-            font-family: 'Poppins', sans-serif;
-            color: #1e3a8a;
-            margin-bottom: 15px;
-        }
-        
-        /* M-Pesa Prompt Simulation */
+        /* Prompt for M-Pesa */
         .mpesa-prompt {
-            background: white;
-            border-radius: 20px;
-            overflow: hidden;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-            max-width: 350px;
-            width: 90%;
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%) scale(0);
-            z-index: 1100;
-            transition: transform 0.3s ease;
-        }
-        
-        .mpesa-prompt.active {
-            transform: translate(-50%, -50%) scale(1);
-        }
-        
-        .mpesa-header {
-            background: linear-gradient(135deg, #00A86B, #007A52);
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-        
-        .mpesa-header h4 {
-            font-family: 'Poppins', sans-serif;
-            margin-bottom: 5px;
-        }
-        
-        .mpesa-body {
-            padding: 30px;
-        }
-        
-        .mpesa-message {
-            text-align: center;
-            margin-bottom: 25px;
-            color: #333;
-            font-weight: 500;
-        }
-        
-        .mpesa-details {
-            background: #f8f9fa;
-            padding: 15px;
-            border-radius: 10px;
-            margin-bottom: 20px;
-        }
-        
-        .detail-row {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 10px;
-            padding-bottom: 10px;
-            border-bottom: 1px solid #e0e0e0;
-        }
-        
-        .detail-row:last-child {
-            margin-bottom: 0;
-            border-bottom: none;
-            padding-bottom: 0;
-        }
-        
-        .detail-label {
-            color: #666;
-        }
-        
-        .detail-value {
-            font-weight: 600;
-            color: #333;
-        }
-        
-        .mpesa-pin-input {
-            display: flex;
-            justify-content: center;
-            gap: 10px;
-            margin: 25px 0;
-        }
-        
-        .pin-digit {
-            width: 50px;
-            height: 60px;
-            border: 2px solid #ddd;
-            border-radius: 8px;
-            text-align: center;
-            font-size: 1.8rem;
-            font-weight: 600;
-            color: #333;
-            background: white;
-        }
-        
-        .pin-digit:focus {
-            outline: none;
-            border-color: #00A86B;
-            box-shadow: 0 0 0 2px rgba(0, 168, 107, 0.2);
-        }
-        
-        .mpesa-actions {
-            display: flex;
-            gap: 10px;
-        }
-        
-        .mpesa-btn {
-            flex: 1;
-            padding: 15px;
-            border: none;
-            border-radius: 10px;
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-        
-        .mpesa-btn.cancel {
-            background: #f8f9fa;
-            color: #666;
-        }
-        
-        .mpesa-btn.cancel:hover {
-            background: #e9ecef;
-        }
-        
-        .mpesa-btn.confirm {
-            background: linear-gradient(135deg, #00A86B, #007A52);
-            color: white;
-        }
-        
-        .mpesa-btn.confirm:hover {
-            background: linear-gradient(135deg, #007A52, #005C3D);
-        }
-        
-        .mpesa-footer {
-            background: #f8f9fa;
-            padding: 15px;
-            text-align: center;
-            color: #666;
-            font-size: 0.9rem;
-        }
-        
-        .overlay {
-            display: none;
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(0, 0, 0, 0.5);
-            z-index: 1050;
+            background: rgba(0, 0, 0, 0.8);
+            z-index: 2000;
+            display: none;
+            align-items: center;
+            justify-content: center;
         }
         
-        .overlay.active {
-            display: block;
+        .mpesa-prompt.active {
+            display: flex;
+        }
+        
+        .mpesa-prompt-content {
+            background: #1e293b;
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            max-width: 500px;
+            border: 2px solid #10b981;
+            animation: promptSlideIn 0.3s ease;
+        }
+        
+        @keyframes promptSlideIn {
+            from {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+        
+        .mpesa-prompt-content h3 {
+            color: #10b981;
+            font-family: 'Poppins', sans-serif;
+            margin-bottom: 20px;
+        }
+        
+        .mpesa-prompt-content .number {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: white;
+            background: #065f46;
+            padding: 15px;
+            border-radius: 10px;
+            margin: 20px 0;
+            letter-spacing: 2px;
+        }
+        
+        .prompt-buttons {
+            display: flex;
+            gap: 15px;
+            margin-top: 25px;
+        }
+        
+        .prompt-btn {
+            flex: 1;
+            padding: 15px;
+            border: none;
+            border-radius: 10px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .copy-btn {
+            background: #3b82f6;
+            color: white;
+        }
+        
+        .close-prompt-btn {
+            background: #64748b;
+            color: white;
         }
     </style>
 </head>
@@ -934,41 +848,22 @@
             <p class="tagline">Professional Templates & Resources for Business Success</p>
             <p style="margin-top: 20px; font-size: 1.2rem; opacity: 0.9;">Instant Delivery • Ready-to-Use • Fully Editable</p>
             
-            <!-- Language Switch -->
-            <div class="language-switch">
-                <button class="lang-btn active" data-lang="en">English</button>
-                <button class="lang-btn" data-lang="sw">Swahili</button>
-            </div>
-            
             <!-- Business Description -->
             <div class="business-description">
-                <div class="desc-en">
-                    <h3 style="color: white; margin-bottom: 15px;">About Our Digital Store</h3>
-                    <p>Welcome to Kenya's premier digital products store! We provide professionally designed templates and resources that help individuals and businesses save time, look professional, and achieve better results. Our products are carefully crafted by experts with real-world business experience.</p>
-                    <p>Whether you're job hunting, starting a business, or scaling your enterprise, our templates give you the competitive edge you need. All templates are fully editable, export-ready, and designed for immediate use.</p>
+                <div class="description-switch">
+                    <button class="lang-btn active" data-lang="en">English</button>
+                    <button class="lang-btn" data-lang="sw">Swahili</button>
                 </div>
-                <div class="desc-sw" style="display: none;">
-                    <h3 style="color: white; margin-bottom: 15px;">Kuhusu Duka Letu la Dijitali</h3>
-                    <p>Karibu kwenye duka bora la bidhaa za dijitali nchini Kenya! Tunatoa violezo vilivyobuniwa kitaalamu na rasilimali zinazosaidia watu binafsi na biashara kuhifadhi wakati, kuonekana kwa ufasaha, na kufikia matokeo bora zaidi. Bidhaa zetu zimeundwa kwa uangalifu na wataalam wenye uzoefu halisi wa biashara.</p>
-                    <p>Ukiwa unatafuta kazi, unaanzisha biashara, au unapanua biashara yako, violezo vyetu vinakupa ufaulu unaohitaji. Violezo vyote vinaweza kubadilishwa, vina uwezo wa kuhamishwa, na vimeundwa kwa matumizi ya haraka.</p>
+                <div class="description-content">
+                    <div class="description-en">
+                        <p>Welcome to Kenya's premier digital products store! We provide professionally designed templates and resources to help entrepreneurs, job seekers, and business owners succeed. Our products are created specifically for the African market, featuring designs that resonate with local businesses and professionals.</p>
+                        <p>All templates are fully editable, easy to customize, and delivered instantly upon payment. We specialize in CVs, business proposals, invoices, marketing content, and branding materials that help you stand out in the competitive market.</p>
+                    </div>
+                    <div class="description-sw" style="display: none;">
+                        <p>Karibu kwenye duka la bidhaa za kidijitali bora za Kenya! Tunatoa viwango vya kisasa na rasilimali ili kusaidia wajasiriamali, watafutaji wa kazi, na wamiliki wa biashara kufanikiwa. Bidhaa zetu zimeundwa mahsusi kwa soko la Kiafrika, zikiwa na miundo inayowakilisha biashara za ndani na wataalamu.</p>
+                        <p>Viwango vyote vinaweza kubadilishwa, ni rahisi kubinafsisha, na hudirishwa mara moja baada ya malipo. Tunajishughulisha na CV, maombi ya biashara, ankara, maudhui ya uuzaji, na vifaa vya chapa vinavyokusaidia kutofautishwa kwenye soko la ushindani.</p>
+                    </div>
                 </div>
-            </div>
-            
-            <!-- Permanent Shareable Link -->
-            <div class="share-link-container">
-                <h3 style="color: #1e3a8a; margin-bottom: 10px; text-align: center;">
-                    <i class="fas fa-link"></i> Permanent Shareable Link
-                </h3>
-                <p style="text-align: center; color: #64748b; margin-bottom: 10px;">Share this link with friends and colleagues:</p>
-                <div class="share-link">
-                    <input type="text" id="shareableLink" value="https://https://dtsdigitaltempalates.netlify.app" readonly>
-                    <button class="copy-btn" onclick="copyShareLink()">
-                        <i class="fas fa-copy"></i> Copy
-                    </button>
-                </div>
-                <p style="text-align: center; color: #94a3b8; font-size: 0.9rem; margin-top: 10px;">
-                    <i class="fas fa-info-circle"></i> This link never expires
-                </p>
             </div>
             
             <div class="store-info">
@@ -991,50 +886,10 @@
             </div>
         </header>
         
-        <!-- Advantages Section -->
-        <section class="packages-section">
-            <h2 class="section-title">Why Choose Our Templates?</h2>
-            
-            <div class="advantages-grid">
-                <div class="advantage-card">
-                    <div class="advantage-icon">
-                        <i class="fas fa-clock"></i>
-                    </div>
-                    <h4>Time-Saving</h4>
-                    <p>Save 10+ hours of design work. Our templates are ready to use immediately.</p>
-                    <p style="color: #10b981; font-weight: 600; margin-top: 10px;">
-                        <i class="fas fa-check-circle"></i> Real-time Experience: "Saved me 15 hours of CV design!" - Sarah, Nairobi
-                    </p>
-                </div>
-                
-                <div class="advantage-card">
-                    <div class="advantage-icon">
-                        <i class="fas fa-chart-line"></i>
-                    </div>
-                    <h4>Professional Results</h4>
-                    <p>Impress employers and clients with professionally designed documents.</p>
-                    <p style="color: #10b981; font-weight: 600; margin-top: 10px;">
-                        <i class="fas fa-check-circle"></i> Real-time Experience: "Landed 3 interviews in one week!" - James, Mombasa
-                    </p>
-                </div>
-                
-                <div class="advantage-card">
-                    <div class="advantage-icon">
-                        <i class="fas fa-money-bill-wave"></i>
-                    </div>
-                    <h4>Cost-Effective</h4>
-                    <p>Get professional design at a fraction of the cost of hiring a designer.</p>
-                    <p style="color: #10b981; font-weight: 600; margin-top: 10px;">
-                        <i class="fas fa-check-circle"></i> Real-time Experience: "Won a 50K contract with the proposal template!" - David, Kisumu
-                    </p>
-                </div>
-            </div>
-        </section>
-        
         <!-- Packages Section -->
         <section class="packages-section">
             <h2 class="section-title">Choose Your Package</h2>
-            <p style="text-align: center; color: #64748b; max-width: 800px; margin: 0 auto 40px; font-size: 1.1rem;">
+            <p style="text-align: center; color: #cbd5e1; max-width: 800px; margin: 0 auto 40px; font-size: 1.1rem;">
                 Select the perfect package for your needs. All templates are professionally designed, fully editable, and ready to use immediately.
             </p>
             
@@ -1066,18 +921,14 @@
                                 <div class="feature-title">10 Ready-to-Use Marketing Captions</div>
                                 <div class="feature-description">Social media captions for instant engagement</div>
                             </li>
-                            <li>
-                                <div class="feature-title">Basic Cover Letter Template</div>
-                                <div class="feature-description">Professional cover letter matching your CV</div>
-                            </li>
                         </ul>
                     </div>
                     
                     <div class="package-footer">
-                        <button class="select-btn" data-package="basic" data-price="500">
+                        <a href="#payment-section" class="select-btn" data-package="basic">
                             <i class="fas fa-shopping-cart"></i>
                             Select Basic Package
-                        </button>
+                        </a>
                     </div>
                 </div>
                 
@@ -1093,7 +944,7 @@
                     <div class="package-features">
                         <ul class="features-list">
                             <li>
-                                <div class="feature-title">Modern CV + Cover Letter Templates (3 designs)</div>
+                                <div class="feature-title">Modern CV + Cover Letter Templates</div>
                                 <div class="feature-description">Matching professional templates with PDF export</div>
                             </li>
                             <li>
@@ -1101,7 +952,7 @@
                                 <div class="feature-description">Complete proposal with pricing, timeline, terms</div>
                             </li>
                             <li>
-                                <div class="feature-title">Invoice + Quotation + Receipt Templates</div>
+                                <div class="feature-title">Invoice + Quotation Templates</div>
                                 <div class="feature-description">Professional billing documents with calculations</div>
                             </li>
                             <li>
@@ -1112,18 +963,14 @@
                                 <div class="feature-title">Social Media Content Calendar (30 days)</div>
                                 <div class="feature-description">Organized posting schedule with hashtags</div>
                             </li>
-                            <li>
-                                <div class="feature-title">Business Card Template</div>
-                                <div class="feature-description">Professional business card design</div>
-                            </li>
                         </ul>
                     </div>
                     
                     <div class="package-footer">
-                        <button class="select-btn" data-package="standard" data-price="1500">
+                        <a href="#payment-section" class="select-btn" data-package="standard">
                             <i class="fas fa-star"></i>
                             Select Standard Package
-                        </button>
+                        </a>
                     </div>
                 </div>
                 
@@ -1139,7 +986,7 @@
                     <div class="package-features">
                         <ul class="features-list">
                             <li>
-                                <div class="feature-title">Premium CV + Cover Letter Templates (5 designs)</div>
+                                <div class="feature-title">Premium CV + Cover Letter Templates</div>
                                 <div class="feature-description">Advanced templates with design options</div>
                             </li>
                             <li>
@@ -1155,7 +1002,7 @@
                                 <div class="feature-description">3+ months of high-converting content</div>
                             </li>
                             <li>
-                                <div class="feature-title">30-Day Content Calendar + Analytics</div>
+                                <div class="feature-title">30-Day Content Calendar</div>
                                 <div class="feature-description">Strategic posting schedule with analytics</div>
                             </li>
                             <li>
@@ -1163,208 +1010,342 @@
                                 <div class="feature-description">Professional branding materials</div>
                             </li>
                             <li>
-                                <div class="feature-title">Email Marketing Templates</div>
-                                <div class="feature-description">Professional email campaigns</div>
-                            </li>
-                            <li>
-                                <div class="feature-title">FREE Customization Included</div>
+                                <div class="feature-title">Free Customization</div>
                                 <div class="feature-description">We customize with your name & business type</div>
                             </li>
                         </ul>
                     </div>
                     
                     <div class="package-footer">
-                        <button class="select-btn" data-package="premium" data-price="3000">
+                        <a href="#payment-section" class="select-btn" data-package="premium">
                             <i class="fas fa-crown"></i>
                             Select Premium Package
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>
         </section>
         
-        <!-- Template Previews -->
-        <section class="packages-section">
-            <h2 class="section-title">Template Previews (Click to View)</h2>
-            <p style="text-align: center; color: #64748b; max-width: 800px; margin: 0 auto 40px; font-size: 1.1rem;">
-                Click on any template to see a detailed preview. All templates are professionally designed and ready to use.
+        <!-- Template Previews Section -->
+        <section class="template-previews-section">
+            <h2 class="section-title">Template Previews (10 Examples)</h2>
+            <p style="text-align: center; color: #cbd5e1; max-width: 800px; margin: 0 auto 40px; font-size: 1.1rem;">
+                See exactly what you're buying. Click on any template to view a larger preview.
             </p>
             
-            <div class="preview-gallery">
-                <!-- CV Templates -->
-                <div class="template-item" onclick="showTemplatePreview('CV Template', 'Professional ATS-friendly CV template with modern design', 'cv')">
-                    <div class="template-image">
-                        <i class="fas fa-user-tie"></i>
+            <div class="template-grid">
+                <!-- Template 1 -->
+                <div class="template-card" data-template="1">
+                    <div class="template-image" style="background-color: #3b82f6;">
+                        <div class="template-overlay">
+                            <button class="view-template-btn">View Preview</button>
+                        </div>
                     </div>
-                    <div class="template-info">
-                        <span class="template-type">CV/RESUME</span>
-                        <h4>Professional CV Template</h4>
-                        <p style="color: #64748b;">Modern design, ATS-friendly, fully editable</p>
-                    </div>
-                </div>
-                
-                <!-- Cover Letter -->
-                <div class="template-item" onclick="showTemplatePreview('Cover Letter', 'Professional cover letter matching CV design', 'letter')">
-                    <div class="template-image">
-                        <i class="fas fa-file-alt"></i>
-                    </div>
-                    <div class="template-info">
-                        <span class="template-type">COVER LETTER</span>
-                        <h4>Cover Letter Template</h4>
-                        <p style="color: #64748b;">Matching design, professional formatting</p>
+                    <div class="template-content">
+                        <h4>Modern CV Template</h4>
+                        <p>Professional CV with African-inspired design elements</p>
                     </div>
                 </div>
                 
-                <!-- Business Proposal -->
-                <div class="template-item" onclick="showTemplatePreview('Business Proposal', 'Complete business proposal template with sections', 'proposal')">
-                    <div class="template-image">
-                        <i class="fas fa-file-contract"></i>
+                <!-- Template 2 -->
+                <div class="template-card" data-template="2">
+                    <div class="template-image" style="background-color: #10b981;">
+                        <div class="template-overlay">
+                            <button class="view-template-btn">View Preview</button>
+                        </div>
                     </div>
-                    <div class="template-info">
-                        <span class="template-type">BUSINESS</span>
-                        <h4>Business Proposal Template</h4>
-                        <p style="color: #64748b;">Win clients with professional proposals</p>
+                    <div class="template-content">
+                        <h4>Business Proposal</h4>
+                        <p>Complete proposal template for Kenyan businesses</p>
                     </div>
                 </div>
                 
-                <!-- Invoice -->
-                <div class="template-item" onclick="showTemplatePreview('Invoice Template', 'Professional invoice with automatic calculations', 'invoice')">
-                    <div class="template-image">
-                        <i class="fas fa-file-invoice-dollar"></i>
+                <!-- Template 3 -->
+                <div class="template-card" data-template="3">
+                    <div class="template-image" style="background-color: #8b5cf6;">
+                        <div class="template-overlay">
+                            <button class="view-template-btn">View Preview</button>
+                        </div>
                     </div>
-                    <div class="template-info">
-                        <span class="template-type">FINANCE</span>
+                    <div class="template-content">
                         <h4>Invoice Template</h4>
-                        <p style="color: #64748b;">Auto-calculate totals, professional layout</p>
+                        <p>Professional invoice with M-Pesa payment section</p>
                     </div>
                 </div>
                 
-                <!-- Marketing Content -->
-                <div class="template-item" onclick="showTemplatePreview('Marketing Content', 'Ready-to-use marketing captions and posts', 'marketing')">
-                    <div class="template-image">
-                        <i class="fas fa-bullhorn"></i>
+                <!-- Template 4 -->
+                <div class="template-card" data-template="4">
+                    <div class="template-image" style="background-color: #f59e0b;">
+                        <div class="template-overlay">
+                            <button class="view-template-btn">View Preview</button>
+                        </div>
                     </div>
-                    <div class="template-info">
-                        <span class="template-type">MARKETING</span>
-                        <h4>Marketing Content Pack</h4>
-                        <p style="color: #64748b;">100+ captions for social media</p>
-                    </div>
-                </div>
-                
-                <!-- Social Media Calendar -->
-                <div class="template-item" onclick="showTemplatePreview('Social Media Calendar', '30-day content calendar with planning', 'calendar')">
-                    <div class="template-image">
-                        <i class="fas fa-calendar-alt"></i>
-                    </div>
-                    <div class="template-info">
-                        <span class="template-type">PLANNING</span>
+                    <div class="template-content">
                         <h4>Social Media Calendar</h4>
-                        <p style="color: #64748b;">Organized posting schedule</p>
+                        <p>30-day content calendar with African holidays</p>
                     </div>
                 </div>
                 
-                <!-- Business Documents -->
-                <div class="template-item" onclick="showTemplatePreview('Business Documents', 'Complete set of business documents', 'business')">
-                    <div class="template-image">
-                        <i class="fas fa-folder-open"></i>
+                <!-- Template 5 -->
+                <div class="template-card" data-template="5">
+                    <div class="template-image" style="background-color: #ef4444;">
+                        <div class="template-overlay">
+                            <button class="view-template-btn">View Preview</button>
+                        </div>
                     </div>
-                    <div class="template-info">
-                        <span class="template-type">BUSINESS</span>
-                        <h4>Business Document Pack</h4>
-                        <p style="color: #64748b;">Proposals, invoices, receipts, more</p>
-                    </div>
-                </div>
-                
-                <!-- Brand Kit -->
-                <div class="template-item" onclick="showTemplatePreview('Brand Kit', 'Complete branding package with logo templates', 'brand')">
-                    <div class="template-image">
-                        <i class="fas fa-palette"></i>
-                    </div>
-                    <div class="template-info">
-                        <span class="template-type">BRANDING</span>
-                        <h4>Brand Kit Template</h4>
-                        <p style="color: #64748b;">Logo, colors, fonts, brand guidelines</p>
+                    <div class="template-content">
+                        <h4>Company Profile</h4>
+                        <p>Professional company profile template</p>
                     </div>
                 </div>
                 
-                <!-- Email Template -->
-                <div class="template-item" onclick="showTemplatePreview('Email Template', 'Professional email marketing templates', 'email')">
-                    <div class="template-image">
-                        <i class="fas fa-envelope"></i>
+                <!-- Template 6 -->
+                <div class="template-card" data-template="6">
+                    <div class="template-image" style="background-color: #06b6d4;">
+                        <div class="template-overlay">
+                            <button class="view-template-btn">View Preview</button>
+                        </div>
                     </div>
-                    <div class="template-info">
-                        <span class="template-type">MARKETING</span>
-                        <h4>Email Template Pack</h4>
-                        <p style="color: #64748b;">Campaigns, newsletters, follow-ups</p>
+                    <div class="template-content">
+                        <h4>Cover Letter</h4>
+                        <p>Matching cover letter for job applications</p>
                     </div>
                 </div>
                 
-                <!-- Presentation -->
-                <div class="template-item" onclick="showTemplatePreview('Presentation', 'Professional presentation templates', 'presentation')">
-                    <div class="template-image">
-                        <i class="fas fa-presentation"></i>
+                <!-- Template 7 -->
+                <div class="template-card" data-template="7">
+                    <div class="template-image" style="background-color: #84cc16;">
+                        <div class="template-overlay">
+                            <button class="view-template-btn">View Preview</button>
+                        </div>
                     </div>
-                    <div class="template-info">
-                        <span class="template-type">BUSINESS</span>
-                        <h4>Presentation Templates</h4>
-                        <p style="color: #64748b;">Client presentations, pitch decks</p>
+                    <div class="template-content">
+                        <h4>Quotation Template</h4>
+                        <p>Professional quotation for services/products</p>
+                    </div>
+                </div>
+                
+                <!-- Template 8 -->
+                <div class="template-card" data-template="8">
+                    <div class="template-image" style="background-color: #f97316;">
+                        <div class="template-overlay">
+                            <button class="view-template-btn">View Preview</button>
+                        </div>
+                    </div>
+                    <div class="template-content">
+                        <h4>Receipt Template</h4>
+                        <p>Digital receipt with business branding</p>
+                    </div>
+                </div>
+                
+                <!-- Template 9 -->
+                <div class="template-card" data-template="9">
+                    <div class="template-image" style="background-color: #8b5cf6;">
+                        <div class="template-overlay">
+                            <button class="view-template-btn">View Preview</button>
+                        </div>
+                    </div>
+                    <div class="template-content">
+                        <h4>Logo Kit</h4>
+                        <p>African-inspired logo templates for businesses</p>
+                    </div>
+                </div>
+                
+                <!-- Template 10 -->
+                <div class="template-card" data-template="10">
+                    <div class="template-image" style="background-color: #ec4899;">
+                        <div class="template-overlay">
+                            <button class="view-template-btn">View Preview</button>
+                        </div>
+                    </div>
+                    <div class="template-content">
+                        <h4>Brand Guidelines</h4>
+                        <p>Complete brand style guide template</p>
                     </div>
                 </div>
             </div>
+        </section>
+        
+        <!-- Payment Section -->
+        <section class="payment-section" id="payment-section">
+            <div class="payment-content">
+                <div class="payment-info">
+                    <h3>How to Purchase & Download</h3>
+                    <p style="color: #cbd5e1; margin-bottom: 30px; font-size: 1.1rem;">
+                        Follow these simple steps to get your digital products instantly. All payments via M-Pesa for quick delivery.
+                    </p>
+                    
+                    <div class="payment-steps">
+                        <div class="step">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h4>Select Your Package</h4>
+                                <p>Choose from Basic, Standard, or Premium package above</p>
+                            </div>
+                        </div>
+                        
+                        <div class="step">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h4>Make M-Pesa Payment</h4>
+                                <p>Send payment to the M-Pesa number below with your name as reference</p>
+                            </div>
+                        </div>
+                        
+                        <div class="step">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h4>Confirm Payment</h4>
+                                <p>Send screenshot of payment confirmation via WhatsApp</p>
+                            </div>
+                        </div>
+                        
+                        <div class="step">
+                            <div class="step-number">4</div>
+                            <div class="step-content">
+                                <h4>Receive Download Links</h4>
+                                <p>Get instant access to all templates via Google Drive</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mpesa-number" id="mpesaNumber">
+                    <h4>Send Payment To:</h4>
+                    <div class="number">0769 484 053</div>
+                    <div class="note">Click/Tap to copy or get prompt</div>
+                    <div style="margin-top: 15px; font-size: 0.9rem;">
+                        <i class="fas fa-exclamation-circle"></i>
+                        Screenshot & WhatsApp your confirmation
+                    </div>
+                </div>
+            </div>
+            
+            <!-- WhatsApp Button -->
+            <a href="https://wa.me/254742256591?text=Hello!%20I'm%20interested%20in%20your%20digital%20products.%20Can%20you%20assist%20me?" 
+               class="whatsapp-btn" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+                Contact Support on WhatsApp: +254 742 256591
+            </a>
         </section>
         
         <!-- Testimonials -->
-        <section class="packages-section">
-            <h2 class="section-title">Real Customer Experiences</h2>
+        <section class="preview-section">
+            <h2 class="section-title">What Our Customers Say</h2>
             
             <div class="testimonials">
                 <div class="testimonial">
                     <div class="testimonial-content">
-                        "The premium package transformed my business. The proposal template helped me win a 50K contract! The customization service was exceptional."
+                        "The premium package transformed my business. The proposal template helped me win a 50K contract! Delivery was same day as promised."
                     </div>
                     <div class="testimonial-author">
                         <div class="author-avatar">JK</div>
                         <div class="author-info">
                             <h5>James Kariuki</h5>
-                            <p style="color: #64748b; font-size: 0.9rem;">Small Business Owner, Nairobi</p>
+                            <p style="color: #94a3b8; font-size: 0.9rem;">Small Business Owner, Nairobi</p>
                         </div>
                     </div>
                 </div>
                 
                 <div class="testimonial">
                     <div class="testimonial-content">
-                        "Got my CV and cover letter templates within 30 minutes. Landed 3 interviews in a week! The ATS-friendly design really works."
+                        "Got my CV and cover letter templates within 30 minutes. Landed 3 interviews in a week! The African-inspired design really stood out."
                     </div>
                     <div class="testimonial-author">
                         <div class="author-avatar">SM</div>
                         <div class="author-info">
                             <h5>Sarah Mwangi</h5>
-                            <p style="color: #64748b; font-size: 0.9rem;">Marketing Professional, Mombasa</p>
+                            <p style="color: #94a3b8; font-size: 0.9rem;">Marketing Professional, Mombasa</p>
                         </div>
                     </div>
                 </div>
                 
                 <div class="testimonial">
                     <div class="testimonial-content">
-                        "The content calendar saved me hours of planning. My social media engagement doubled in the first month! Best investment for my business."
+                        "The content calendar saved me hours of planning. My social media engagement doubled! The templates are so easy to customize."
                     </div>
                     <div class="testimonial-author">
                         <div class="author-avatar">DN</div>
                         <div class="author-info">
                             <h5>David Njoroge</h5>
-                            <p style="color: #64748b; font-size: 0.9rem;">Content Creator, Kisumu</p>
+                            <p style="color: #94a3b8; font-size: 0.9rem;">Content Creator, Kisumu</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
         
+        <!-- FAQ -->
+        <section class="faq-section">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        How do I receive the templates after payment?
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>After payment confirmation via WhatsApp, you'll receive Google Drive links with all templates. Basic package: Instant delivery. Standard: Within 1 hour. Premium: Same day with customization.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Are the templates editable?
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! All templates are fully editable. You can customize names, colors, text, and branding. Premium package includes free customization by us.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        What if I have problems with the templates?
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We provide WhatsApp support at +254 742 256591. Our team is available to help you customize and use the templates effectively.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Can I get a refund?
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Due to the digital nature of the products, we don't offer refunds once templates are delivered. However, we provide WhatsApp support to help you use them effectively.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Do you offer custom templates?
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! For premium package customers, we include free customization. For specific custom projects, contact us via WhatsApp for a quote.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Permanent Link -->
+        <div style="text-align: center; margin: 40px 0;">
+            <a href="https://premiumdigitalstore.co.ke" class="permanent-link" target="_blank">
+                <i class="fas fa-link"></i> Permanent Website Link: https://premiumdigitalstore.co.ke
+            </a>
+            <p style="color: #94a3b8; margin-top: 10px;">Bookmark this link for future access to our templates</p>
+        </div>
+        
         <!-- Footer -->
         <footer>
-            <p style="margin-bottom: 20px; font-size: 1.1rem; font-weight: 600; color: #1e3a8a;">Premium Digital Products Store</p>
+            <p style="margin-bottom: 20px; font-size: 1.1rem; font-weight: 600; color: #60a5fa;">Premium Digital Products Store</p>
             <p>Professional Templates for Business Success • Instant Delivery • WhatsApp Support</p>
             <p style="margin-top: 20px; color: #94a3b8; font-size: 0.9rem;">
-                Need help? WhatsApp: <a href="https://wa.me/254742256591" style="color: #25D366; text-decoration: none;">+254 742 256591</a> | Email: support@digitalproducts.co.ke
+                Need help? WhatsApp: +254 742 256591 | Email: support@premiumdigitalstore.co.ke
             </p>
             <p style="margin-top: 10px; color: #94a3b8; font-size: 0.8rem;">
                 © 2023 All Rights Reserved. Templates are for personal and commercial use.
@@ -1372,156 +1353,113 @@
         </footer>
     </div>
     
-    <!-- WhatsApp Float Button -->
-    <a href="https://wa.me/254742256591?text=Hello!%20I'm%20interested%20in%20your%20digital%20templates.%20Can%20you%20help%20me?" 
-       class="whatsapp-float" target="_blank">
-        <i class="fab fa-whatsapp"></i>
-    </a>
-    
-    <!-- Payment Modal -->
-    <div class="modal" id="paymentModal">
+    <!-- Purchase Modal -->
+    <div class="modal" id="purchaseModal">
         <div class="modal-content">
             <div class="modal-header">
-                <h3>Complete M-Pesa Payment</h3>
-                <button class="close-modal" onclick="closeModal()">
+                <h3>Complete Your Purchase</h3>
+                <button class="close-modal" id="closeModal">
                     <i class="fas fa-times"></i>
                 </button>
             </div>
             
             <div class="modal-body">
-                <div class="amount-display">
-                    <p>Amount to Pay:</p>
-                    <div class="amount" id="paymentAmount">KES 500</div>
-                    <p>For: <span id="packageName">BASIC PACKAGE</span></p>
+                <div class="selected-package" id="selectedPackageInfo">
+                    <!-- Package info will be inserted here -->
                 </div>
                 
-                <div class="form-group">
-                    <label for="phoneNumber">Your M-Pesa Number:</label>
-                    <input type="tel" id="phoneNumber" placeholder="07XX XXX XXX" maxlength="10" value="0742">
+                <div class="payment-steps">
+                    <h4 style="font-family: 'Poppins', sans-serif; color: #60a5fa; margin-bottom: 20px;">Payment Instructions</h4>
+                    
+                    <div class="confirmation-step">
+                        <i class="fas fa-money-bill-wave"></i>
+                        <div>
+                            <h5>1. Make M-Pesa Payment</h5>
+                            <p>Send <strong id="packagePrice">KES 500</strong> to:</p>
+                            <div style="background: #0f172a; padding: 15px; border-radius: 10px; margin: 10px 0; text-align: center; cursor: pointer;" onclick="showMpesaPrompt()">
+                                <div style="font-size: 2rem; font-weight: 800; color: #10b981; letter-spacing: 2px;">0769 484 053</div>
+                                <p style="color: #94a3b8; font-size: 0.9rem;">Click to copy or get instructions</p>
+                            </div>
+                            <p><strong>Reference:</strong> Your Full Name + Package Name</p>
+                        </div>
+                    </div>
+                    
+                    <div class="confirmation-step">
+                        <i class="fas fa-screenshot"></i>
+                        <div>
+                            <h5>2. Screenshot Payment Confirmation</h5>
+                            <p>Take a clear screenshot of the M-Pesa confirmation message showing:</p>
+                            <ul style="margin: 10px 0 10px 20px; color: #cbd5e1;">
+                                <li>Amount sent</li>
+                                <li>Transaction code</li>
+                                <li>Time & date</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="confirmation-step">
+                        <i class="fab fa-whatsapp"></i>
+                        <div>
+                            <h5>3. Send via WhatsApp</h5>
+                            <p>Forward the screenshot to our WhatsApp number with:</p>
+                            <ul style="margin: 10px 0 10px 20px; color: #cbd5e1;">
+                                <li>Your full name</li>
+                                <li>Email address</li>
+                                <li>Selected package</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
                 
-                <button class="confirm-btn" onclick="initiateMpesaPayment()">
-                    <i class="fas fa-mobile-alt"></i>
-                    Proceed to M-Pesa Prompt
-                </button>
+                <a href="https://wa.me/254742256591?text=Hello!%20I've%20just%20purchased%20a%20package%20from%20your%20digital%20store.%20Here%20is%20my%20payment%20confirmation." 
+                   class="whatsapp-btn" target="_blank" id="whatsappBtn">
+                    <i class="fab fa-whatsapp"></i>
+                    Send Payment Confirmation on WhatsApp
+                </a>
                 
-                <div class="success-message" id="mpesaSuccess">
+                <div class="success-message" id="successMessage">
                     <i class="fas fa-check-circle"></i>
-                    Payment initiated! Check your phone to enter M-Pesa PIN.
+                    <strong>Thank you for your purchase!</strong> We'll send your download links within the promised delivery time.
                 </div>
-            </div>
-        </div>
-    </div>
-    
-    <!-- M-Pesa Prompt Simulation -->
-    <div class="overlay" id="mpesaOverlay"></div>
-    
-    <div class="mpesa-prompt" id="mpesaPrompt">
-        <div class="mpesa-header">
-            <h4>M-PESA</h4>
-            <p>Enter your M-PESA PIN</p>
-        </div>
-        
-        <div class="mpesa-body">
-            <div class="mpesa-message" id="mpesaMessage">
-                Confirm payment to:<br>
-                <strong>DIGITAL TEMPLATES</strong>
-            </div>
-            
-            <div class="mpesa-details">
-                <div class="detail-row">
-                    <span class="detail-label">Amount:</span>
-                    <span class="detail-value" id="promptAmount">KES 500</span>
-                </div>
-                <div class="detail-row">
-                    <span class="detail-label">To:</span>
-                    <span class="detail-value" id="promptRecipient">DIGITAL TEMPLATES</span>
-                </div>
-                <div class="detail-row">
-                    <span class="detail-label">Account:</span>
-                    <span class="detail-value" id="promptPhone">254769484053</span>
-                </div>
-                <div class="detail-row">
-                    <span class="detail-label">Reference:</span>
-                    <span class="detail-value" id="promptReference">TEMPLATES</span>
-                </div>
-            </div>
-            
-            <div class="mpesa-pin-input">
-                <input type="password" class="pin-digit" maxlength="1" oninput="moveToNext(this, 1)">
-                <input type="password" class="pin-digit" maxlength="1" oninput="moveToNext(this, 2)">
-                <input type="password" class="pin-digit" maxlength="1" oninput="moveToNext(this, 3)">
-                <input type="password" class="pin-digit" maxlength="1" oninput="moveToNext(this, 4)">
-            </div>
-            
-            <div class="mpesa-actions">
-                <button class="mpesa-btn cancel" onclick="cancelMpesaPayment()">
-                    Cancel
-                </button>
-                <button class="mpesa-btn confirm" onclick="confirmMpesaPayment()">
-                    OK
-                </button>
-            </div>
-        </div>
-        
-        <div class="mpesa-footer">
-            For help dial *234# or call 234
-        </div>
-    </div>
-    
-    <!-- Access Links Modal -->
-    <div class="modal" id="accessModal">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h3>Download Your Templates</h3>
-                <button class="close-modal" onclick="closeModal()">
-                    <i class="fas fa-times"></i>
-                </button>
-            </div>
-            
-            <div class="modal-body">
-                <div class="success-message" style="display: block;">
-                    <i class="fas fa-check-circle"></i>
-                    Payment confirmed! Your templates are ready for download.
-                </div>
-                
-                <div class="access-links">
-                    <h4>Access Your Package:</h4>
-                    <a href="https://drive.google.com/drive/folders/15nx-DrBbI7xL9Um1Ra0kYziWxv73eUs8?usp=drive_link" 
-                       class="access-link" target="_blank" id="basicLink" style="display: none;">
-                        <i class="fas fa-download"></i> Download Basic Package
-                    </a>
-                    <a href="https://drive.google.com/drive/folders/1roWfOO0C035PQznH37W5i63eX1tyW4xM?usp=drive_link" 
-                       class="access-link" target="_blank" id="standardLink" style="display: none;">
-                        <i class="fas fa-download"></i> Download Standard Package
-                    </a>
-                    <a href="https://drive.google.com/drive/folders/1DTH0rC8Ur7VasxbNFkiDgUQ2e-SWzG4d?usp=drive_link" 
-                       class="access-link" target="_blank" id="premiumLink" style="display: none;">
-                        <i class="fas fa-download"></i> Download Premium Package
-                    </a>
-                </div>
-                
-                <p style="text-align: center; color: #64748b; margin-top: 20px;">
-                    <i class="fas fa-info-circle"></i> Links are valid forever. Save them for future access.
-                </p>
             </div>
         </div>
     </div>
     
     <!-- Template Preview Modal -->
-    <div class="modal" id="previewModal">
+    <div class="modal" id="templateModal">
         <div class="modal-content">
             <div class="modal-header">
-                <h3 id="previewTitle">Template Preview</h3>
-                <button class="close-modal" onclick="closeModal()">
+                <h3 id="templateModalTitle">Template Preview</h3>
+                <button class="close-modal" id="closeTemplateModal">
                     <i class="fas fa-times"></i>
                 </button>
             </div>
             
             <div class="modal-body">
-                <div id="previewContent">
-                    <!-- Preview content will be inserted here -->
-                </div>
+                <img src="" alt="Template Preview" class="template-modal-img" id="templateModalImg">
+                <div id="templateModalDescription"></div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- M-Pesa Prompt -->
+    <div class="mpesa-prompt" id="mpesaPrompt">
+        <div class="mpesa-prompt-content">
+            <h3>M-Pesa Payment Instructions</h3>
+            <p style="color: #cbd5e1;">Send payment to:</p>
+            <div class="number">0769 484 053</div>
+            <p style="color: #cbd5e1;">Use your full name as payment reference</p>
+            <p style="color: #94a3b8; margin-top: 15px; font-size: 0.9rem;">
+                <i class="fas fa-info-circle"></i> After payment, screenshot confirmation and send via WhatsApp
+            </p>
+            
+            <div class="prompt-buttons">
+                <button class="prompt-btn copy-btn" onclick="copyMpesaNumber()">
+                    <i class="fas fa-copy"></i> Copy Number
+                </button>
+                <button class="prompt-btn close-prompt-btn" onclick="closeMpesaPrompt()">
+                    Close
+                </button>
             </div>
         </div>
     </div>
@@ -1532,35 +1470,91 @@
             basic: {
                 name: "BASIC PACKAGE",
                 price: "KES 500",
-                amount: 500,
-                delivery: "Instant Delivery",
-                whatsapp: "+254742256591",
-                mpesa: "+254769484053",
-                link: "https://drive.google.com/drive/folders/15nx-DrBbI7xL9Um1Ra0kYziWxv73eUs8?usp=drive_link"
+                delivery: "Instant (Google Drive)",
+                features: [
+                    "Professional CV Template (Editable)",
+                    "Business Invoice Template",
+                    "Simple Business Proposal Template",
+                    "10 Ready-to-Use Marketing Captions"
+                ],
+                whatsappMessage: "Hello! I've just purchased the BASIC PACKAGE. Here is my payment confirmation:"
             },
             standard: {
                 name: "STANDARD PACKAGE",
                 price: "KES 1,500",
-                amount: 1500,
                 delivery: "Within 1 Hour",
-                whatsapp: "+254742256591",
-                mpesa: "+254769484053",
-                link: "https://drive.google.com/drive/folders/1roWfOO0C035PQznH37W5i63eX1tyW4xM?usp=drive_link"
+                features: [
+                    "Modern CV + Cover Letter Templates",
+                    "Full Business Proposal Template",
+                    "Invoice + Quotation Templates",
+                    "30 Marketing Captions",
+                    "Social Media Content Calendar (30 days)"
+                ],
+                whatsappMessage: "Hello! I've just purchased the STANDARD PACKAGE. Here is my payment confirmation:"
             },
             premium: {
                 name: "PREMIUM PACKAGE",
                 price: "KES 3,000",
-                amount: 3000,
-                delivery: "Same Day Delivery",
-                whatsapp: "+254742256591",
-                mpesa: "+254769484053",
-                link: "https://drive.google.com/drive/folders/1DTH0rC8Ur7VasxbNFkiDgUQ2e-SWzG4d?usp=drive_link"
+                delivery: "Same Day",
+                features: [
+                    "Premium CV + Cover Letter Templates",
+                    "Full Business Proposal + Company Profile",
+                    "Invoice, Quotation & Receipt Templates",
+                    "100 Marketing Captions (AI-Optimized)",
+                    "30-Day Content Calendar",
+                    "Logo & Brand Kit Template (Canva)",
+                    "Free Customization (Name, Business Type)"
+                ],
+                whatsappMessage: "Hello! I've just purchased the PREMIUM PACKAGE. Here is my payment confirmation:"
+            }
+        };
+        
+        // Template Data
+        const templates = {
+            1: {
+                title: "Modern CV Template",
+                description: "Professional CV template with African-inspired design elements, ATS-friendly layout, and easy customization for job seekers in Kenya and across Africa."
+            },
+            2: {
+                title: "Business Proposal Template",
+                description: "Complete business proposal template designed for Kenyan businesses, with sections for pricing, timelines, terms, and company background."
+            },
+            3: {
+                title: "Invoice Template",
+                description: "Professional invoice template with M-Pesa payment section, automatic calculations, and branding options for small businesses."
+            },
+            4: {
+                title: "Social Media Calendar",
+                description: "30-day content calendar template with African holidays and events included, perfect for planning social media campaigns."
+            },
+            5: {
+                title: "Company Profile Template",
+                description: "Comprehensive company profile template to showcase your business to clients, investors, and partners."
+            },
+            6: {
+                title: "Cover Letter Template",
+                description: "Matching cover letter template for job applications, designed to complement our CV templates."
+            },
+            7: {
+                title: "Quotation Template",
+                description: "Professional quotation template for services and products, with terms and conditions section."
+            },
+            8: {
+                title: "Receipt Template",
+                description: "Digital receipt template with business branding and transaction details for customer records."
+            },
+            9: {
+                title: "Logo Kit Template",
+                description: "African-inspired logo templates for various business types, editable in Canva with brand colors."
+            },
+            10: {
+                title: "Brand Guidelines Template",
+                description: "Complete brand style guide template to maintain consistent branding across all materials."
             }
         };
         
         // Current selected package
         let selectedPackage = null;
-        let mpesaPin = "";
         
         // Initialize the application
         document.addEventListener('DOMContentLoaded', function() {
@@ -1568,387 +1562,231 @@
             setupEventListeners();
         });
         
+        // Initialize the application
         function initializeApp() {
-            // Set up language switching
-            document.querySelectorAll('.lang-btn').forEach(btn => {
-                btn.addEventListener('click', function() {
-                    const lang = this.getAttribute('data-lang');
-                    switchLanguage(lang);
-                });
-            });
+            // Setup FAQ accordion
+            setupFAQ();
             
-            // Initialize PIN input
-            setupPinInput();
+            // Setup language switcher
+            setupLanguageSwitcher();
         }
         
+        // Set up event listeners
         function setupEventListeners() {
             // Package selection buttons
             document.querySelectorAll('.select-btn').forEach(btn => {
-                btn.addEventListener('click', function() {
+                btn.addEventListener('click', function(e) {
+                    e.preventDefault();
                     const packageType = this.getAttribute('data-package');
                     selectPackage(packageType);
                 });
             });
             
-            // Close modals when clicking outside
-            document.querySelectorAll('.modal').forEach(modal => {
-                modal.addEventListener('click', function(e) {
-                    if (e.target === this) {
-                        closeModal();
-                    }
+            // Template preview buttons
+            document.querySelectorAll('.template-card').forEach(card => {
+                card.addEventListener('click', function() {
+                    const templateId = this.getAttribute('data-template');
+                    showTemplatePreview(templateId);
                 });
             });
             
-            // Overlay click to close M-Pesa prompt
-            document.getElementById('mpesaOverlay').addEventListener('click', function() {
-                closeMpesaPrompt();
+            // M-Pesa number click
+            document.getElementById('mpesaNumber').addEventListener('click', showMpesaPrompt);
+            
+            // Modal close buttons
+            document.getElementById('closeModal').addEventListener('click', closeModal);
+            document.getElementById('closeTemplateModal').addEventListener('click', closeTemplateModal);
+            
+            // Close modals when clicking outside
+            document.getElementById('purchaseModal').addEventListener('click', function(e) {
+                if (e.target === this) {
+                    closeModal();
+                }
+            });
+            
+            document.getElementById('templateModal').addEventListener('click', function(e) {
+                if (e.target === this) {
+                    closeTemplateModal();
+                }
+            });
+            
+            document.getElementById('mpesaPrompt').addEventListener('click', function(e) {
+                if (e.target === this) {
+                    closeMpesaPrompt();
+                }
+            });
+            
+            // Close prompt with Escape key
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape') {
+                    closeModal();
+                    closeTemplateModal();
+                    closeMpesaPrompt();
+                }
             });
         }
         
-        function setupPinInput() {
-            const pinDigits = document.querySelectorAll('.pin-digit');
-            pinDigits.forEach((digit, index) => {
-                digit.addEventListener('input', function(e) {
-                    if (this.value.length === 1) {
-                        mpesaPin += this.value;
-                        if (index < 3) {
-                            pinDigits[index + 1].focus();
-                        }
-                    }
-                });
-                
-                digit.addEventListener('keydown', function(e) {
-                    if (e.key === 'Backspace' && this.value === '') {
-                        if (index > 0) {
-                            pinDigits[index - 1].focus();
-                            mpesaPin = mpesaPin.slice(0, -1);
-                        }
-                    }
-                });
-            });
-        }
-        
-        function moveToNext(input, nextIndex) {
-            if (input.value.length === 1) {
-                const nextInput = document.querySelector(`.pin-digit:nth-child(${nextIndex + 1})`);
-                if (nextInput) nextInput.focus();
-            }
-        }
-        
+        // Select a package
         function selectPackage(packageType) {
             selectedPackage = packageType;
             const packageData = packages[packageType];
             
             // Update modal content
-            document.getElementById('packageName').textContent = packageData.name;
-            document.getElementById('paymentAmount').textContent = packageData.price;
-            
-            // Show payment modal
-            document.getElementById('paymentModal').classList.add('active');
-            
-            // Reset messages
-            document.getElementById('mpesaSuccess').classList.remove('show');
-        }
-        
-        function initiateMpesaPayment() {
-            const phoneNumber = document.getElementById('phoneNumber').value;
-            
-            if (!phoneNumber || phoneNumber.length < 10) {
-                alert('Please enter a valid M-Pesa number (10 digits starting with 07)');
-                return;
-            }
-            
-            if (!phoneNumber.startsWith('07')) {
-                alert('M-Pesa number must start with 07');
-                return;
-            }
-            
-            const packageData = packages[selectedPackage];
-            
-            // Show M-Pesa prompt
-            showMpesaPrompt(packageData);
-        }
-        
-        function showMpesaPrompt(packageData) {
-            // Update prompt details
-            document.getElementById('promptAmount').textContent = packageData.price;
-            document.getElementById('promptPhone').textContent = '254' + packageData.mpesa.replace('+', '').replace(/\s/g, '');
-            document.getElementById('promptReference').textContent = selectedPackage.toUpperCase() + ' PACKAGE';
-            
-            // Show overlay and prompt
-            document.getElementById('mpesaOverlay').classList.add('active');
-            document.getElementById('mpesaPrompt').classList.add('active');
-            
-            // Reset PIN
-            mpesaPin = "";
-            document.querySelectorAll('.pin-digit').forEach(digit => {
-                digit.value = '';
-            });
-            
-            // Focus first PIN digit
-            setTimeout(() => {
-                document.querySelector('.pin-digit').focus();
-            }, 300);
-        }
-        
-        function confirmMpesaPayment() {
-            const pinDigits = document.querySelectorAll('.pin-digit');
-            const enteredPin = Array.from(pinDigits).map(digit => digit.value).join('');
-            
-            if (enteredPin.length !== 4) {
-                alert('Please enter a valid 4-digit M-Pesa PIN');
-                return;
-            }
-            
-            // Validate PIN (simulation)
-            if (enteredPin === '0000') {
-                alert('Invalid PIN. Please use your actual M-Pesa PIN (1234 for demo)');
-                return;
-            }
-            
-            // Show processing animation
-            const confirmBtn = document.querySelector('.mpesa-btn.confirm');
-            const originalText = confirmBtn.innerHTML;
-            confirmBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Processing...';
-            confirmBtn.disabled = true;
-            
-            // Simulate payment processing
-            setTimeout(() => {
-                // Close M-Pesa prompt
-                closeMpesaPrompt();
-                
-                // Show success message
-                showPaymentSuccess();
-                
-                // Reset button
-                confirmBtn.innerHTML = originalText;
-                confirmBtn.disabled = false;
-            }, 2000);
-        }
-        
-        function cancelMpesaPayment() {
-            closeMpesaPrompt();
-            alert('Payment cancelled. You can try again anytime.');
-        }
-        
-        function closeMpesaPrompt() {
-            document.getElementById('mpesaOverlay').classList.remove('active');
-            document.getElementById('mpesaPrompt').classList.remove('active');
-            
-            // Clear PIN
-            mpesaPin = "";
-            document.querySelectorAll('.pin-digit').forEach(digit => {
-                digit.value = '';
-            });
-        }
-        
-        function showPaymentSuccess() {
-            // Close payment modal
-            document.getElementById('paymentModal').classList.remove('active');
-            
-            // Show success notification
-            const successMsg = document.getElementById('mpesaSuccess');
-            successMsg.classList.add('show');
-            
-            // Show access links after delay
-            setTimeout(() => {
-                showAccessLinks();
-            }, 1500);
-        }
-        
-        function showAccessLinks() {
-            const modal = document.getElementById('accessModal');
-            
-            // Hide all links first
-            document.querySelectorAll('.access-link').forEach(link => {
-                link.style.display = 'none';
-            });
-            
-            // Show only the relevant link
-            if (selectedPackage === 'basic') {
-                document.getElementById('basicLink').style.display = 'block';
-            } else if (selectedPackage === 'standard') {
-                document.getElementById('standardLink').style.display = 'block';
-            } else if (selectedPackage === 'premium') {
-                document.getElementById('premiumLink').style.display = 'block';
-            }
-            
-            modal.classList.add('active');
-        }
-        
-        function closeModal() {
-            document.querySelectorAll('.modal').forEach(modal => {
-                modal.classList.remove('active');
-            });
-        }
-        
-        function showTemplatePreview(title, description, type) {
-            const modal = document.getElementById('previewModal');
-            const previewContent = document.getElementById('previewContent');
-            const previewTitle = document.getElementById('previewTitle');
-            
-            previewTitle.textContent = title;
-            
-            // Create preview content based on template type
-            let content = `
-                <div style="text-align: center; margin-bottom: 30px;">
-                    <div style="font-size: 4rem; color: #3b82f6; margin-bottom: 20px;">
-                        ${getTemplateIcon(type)}
+            document.getElementById('selectedPackageInfo').innerHTML = `
+                <h4 style="font-family: 'Poppins', sans-serif; color: #60a5fa; margin-bottom: 10px;">${packageData.name}</h4>
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+                    <div>
+                        <div style="font-size: 2.5rem; font-weight: 800; color: #10b981;">${packageData.price}</div>
+                        <div style="color: #94a3b8;">${packageData.delivery}</div>
                     </div>
-                    <h4 style="color: #1e3a8a; margin-bottom: 15px;">${title}</h4>
-                    <p style="color: #64748b; margin-bottom: 25px;">${description}</p>
+                    <div style="background: #1e3a8a; color: #60a5fa; padding: 8px 16px; border-radius: 20px; font-weight: 600;">
+                        <i class="fas fa-box"></i> ${packageData.features.length} Templates
+                    </div>
                 </div>
-                
-                <div style="background: #f8fafc; padding: 25px; border-radius: 15px; margin-bottom: 25px;">
-                    <h5 style="color: #1e3a8a; margin-bottom: 15px;">Features Included:</h5>
-                    <ul style="color: #475569;">
-                        ${getTemplateFeatures(type)}
+                <div>
+                    <strong style="color: #cbd5e1;">Includes:</strong>
+                    <ul style="margin-top: 10px; color: #cbd5e1;">
+                        ${packageData.features.map(feature => `<li>${feature}</li>`).join('')}
                     </ul>
-                </div>
-                
-                <div style="background: #f0f9ff; padding: 20px; border-radius: 15px; text-align: center;">
-                    <p style="color: #0369a1; margin-bottom: 15px;">
-                        <i class="fas fa-info-circle"></i> This template is included in all packages
-                    </p>
-                    <button class="confirm-btn" style="padding: 12px 25px; width: auto;" onclick="closeModal(); selectPackage('basic')">
-                        <i class="fas fa-shopping-cart"></i>
-                        Purchase Package to Access
-                    </button>
                 </div>
             `;
             
-            previewContent.innerHTML = content;
-            modal.classList.add('active');
+            // Update package price
+            document.getElementById('packagePrice').textContent = packageData.price;
+            
+            // Update WhatsApp link
+            const whatsappBtn = document.getElementById('whatsappBtn');
+            const encodedMessage = encodeURIComponent(`${packageData.whatsappMessage} I paid ${packageData.price} to 0769 484 053`);
+            whatsappBtn.href = `https://wa.me/254742256591?text=${encodedMessage}`;
+            
+            // Show modal
+            document.getElementById('purchaseModal').classList.add('active');
+            
+            // Hide success message
+            document.getElementById('successMessage').classList.remove('show');
         }
         
-        function getTemplateIcon(type) {
-            const icons = {
-                'cv': 'fas fa-user-tie',
-                'letter': 'fas fa-file-alt',
-                'proposal': 'fas fa-file-contract',
-                'invoice': 'fas fa-file-invoice-dollar',
-                'marketing': 'fas fa-bullhorn',
-                'calendar': 'fas fa-calendar-alt',
-                'business': 'fas fa-folder-open',
-                'brand': 'fas fa-palette',
-                'email': 'fas fa-envelope',
-                'presentation': 'fas fa-presentation'
-            };
+        // Show template preview
+        function showTemplatePreview(templateId) {
+            const template = templates[templateId];
             
-            return `<i class="${icons[type] || 'fas fa-file'}"></i>`;
+            // Update modal content
+            document.getElementById('templateModalTitle').textContent = template.title;
+            document.getElementById('templateModalDescription').innerHTML = `
+                <h4 style="color: #60a5fa; margin-bottom: 15px;">${template.title}</h4>
+                <p style="color: #cbd5e1; margin-bottom: 20px;">${template.description}</p>
+                <p style="color: #94a3b8; font-size: 0.9rem;">
+                    <i class="fas fa-info-circle"></i> This template is included in all our packages. Purchase any package to get access.
+                </p>
+            `;
+            
+            // Show modal
+            document.getElementById('templateModal').classList.add('active');
         }
         
-        function getTemplateFeatures(type) {
-            const features = {
-                'cv': [
-                    'ATS-friendly design',
-                    'Fully editable sections',
-                    'Professional formatting',
-                    'Multiple color options',
-                    'PDF export ready',
-                    'Mobile responsive'
-                ],
-                'letter': [
-                    'Matching CV design',
-                    'Professional header',
-                    'Customizable content',
-                    'Multiple layout options',
-                    'PDF export ready',
-                    'Email ready format'
-                ],
-                'proposal': [
-                    'Complete sections',
-                    'Pricing tables',
-                    'Timeline templates',
-                    'Terms & conditions',
-                    'Professional cover page',
-                    'Client customization'
-                ],
-                'invoice': [
-                    'Automatic calculations',
-                    'Professional numbering',
-                    'Tax calculations',
-                    'Payment terms',
-                    'Branding options',
-                    'Multiple currency support'
-                ]
-            };
-            
-            const defaultFeatures = [
-                'Fully editable',
-                'Professional design',
-                'Ready to use',
-                'Multiple formats',
-                'Customizable colors',
-                'Instant download'
-            ];
-            
-            const featureList = features[type] || defaultFeatures;
-            return featureList.map(feature => `<li>${feature}</li>`).join('');
+        // Show M-Pesa prompt
+        function showMpesaPrompt() {
+            document.getElementById('mpesaPrompt').classList.add('active');
         }
         
-        function copyShareLink() {
-            const linkInput = document.getElementById('shareableLink');
-            linkInput.select();
-            linkInput.setSelectionRange(0, 99999);
-            
-            try {
-                navigator.clipboard.writeText(linkInput.value);
-                
-                // Show success feedback
-                const copyBtn = document.querySelector('.copy-btn');
-                const originalText = copyBtn.innerHTML;
-                copyBtn.innerHTML = '<i class="fas fa-check"></i> Copied!';
-                copyBtn.style.background = '#10b981';
-                
-                setTimeout(() => {
-                    copyBtn.innerHTML = originalText;
-                    copyBtn.style.background = '';
-                }, 2000);
-            } catch (err) {
-                console.error('Failed to copy: ', err);
-            }
+        // Close M-Pesa prompt
+        function closeMpesaPrompt() {
+            document.getElementById('mpesaPrompt').classList.remove('active');
         }
         
-        function switchLanguage(lang) {
-            // Update active button
-            document.querySelectorAll('.lang-btn').forEach(btn => {
-                btn.classList.remove('active');
-                if (btn.getAttribute('data-lang') === lang) {
-                    btn.classList.add('active');
-                }
+        // Copy M-Pesa number
+        function copyMpesaNumber() {
+            const mpesaNumber = '0769 484 053';
+            navigator.clipboard.writeText(mpesaNumber).then(() => {
+                alert('M-Pesa number copied to clipboard: ' + mpesaNumber);
+                closeMpesaPrompt();
             });
+        }
+        
+        // Close modal
+        function closeModal() {
+            document.getElementById('purchaseModal').classList.remove('active');
+        }
+        
+        // Close template modal
+        function closeTemplateModal() {
+            document.getElementById('templateModal').classList.remove('active');
+        }
+        
+        // Setup FAQ accordion
+        function setupFAQ() {
+            const faqItems = document.querySelectorAll('.faq-item');
             
-            // Show/hide language content
-            if (lang === 'en') {
-                document.querySelector('.desc-en').style.display = 'block';
-                document.querySelector('.desc-sw').style.display = 'none';
-            } else {
-                document.querySelector('.desc-en').style.display = 'none';
-                document.querySelector('.desc-sw').style.display = 'block';
-            }
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                question.addEventListener('click', () => {
+                    // Close all other items
+                    faqItems.forEach(otherItem => {
+                        if (otherItem !== item) {
+                            otherItem.classList.remove('active');
+                        }
+                    });
+                    
+                    // Toggle current item
+                    item.classList.toggle('active');
+                });
+            });
+        }
+        
+        // Setup language switcher
+        function setupLanguageSwitcher() {
+            const langButtons = document.querySelectorAll('.lang-btn');
+            const englishDesc = document.querySelector('.description-en');
+            const swahiliDesc = document.querySelector('.description-sw');
+            
+            langButtons.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    // Update active button
+                    langButtons.forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    // Show selected language
+                    const lang = this.getAttribute('data-lang');
+                    if (lang === 'en') {
+                        englishDesc.style.display = 'block';
+                        swahiliDesc.style.display = 'none';
+                    } else {
+                        englishDesc.style.display = 'none';
+                        swahiliDesc.style.display = 'block';
+                    }
+                });
+            });
         }
         
         // Keyboard shortcuts
         document.addEventListener('keydown', function(e) {
-            if (e.key === 'Escape') {
-                closeModal();
-                closeMpesaPrompt();
+            // 1, 2, 3 to select packages
+            if (e.key === '1') {
+                selectPackage('basic');
+            } else if (e.key === '2') {
+                selectPackage('standard');
+            } else if (e.key === '3') {
+                selectPackage('premium');
             }
-            
-            // Quick package selection
-            if (e.key === '1') selectPackage('basic');
-            if (e.key === '2') selectPackage('standard');
-            if (e.key === '3') selectPackage('premium');
         });
         
-        // Demo: Auto-fill M-Pesa number for testing
-        function fillDemoPhone() {
-            document.getElementById('phoneNumber').value = '0742256591';
-        }
-        
-        // Initialize with demo phone (for testing)
-        window.onload = fillDemoPhone;
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
     </script>
 </body>
 </html>
