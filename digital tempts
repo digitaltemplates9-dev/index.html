@@ -961,7 +961,7 @@
                 </h3>
                 <p style="text-align: center; color: #64748b; margin-bottom: 10px;">Share this link with friends and colleagues:</p>
                 <div class="share-link">
-                    <input type="text" id="shareableLink" value="https://digitalproducts.co.ke/templates-store" readonly>
+                    <input type="text" id="shareableLink" value="https://https://dtsdigitaltempalates.netlify.app" readonly>
                     <button class="copy-btn" onclick="copyShareLink()">
                         <i class="fas fa-copy"></i> Copy
                     </button>
